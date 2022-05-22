@@ -1,20 +1,30 @@
 import sample1 from '../images/sample1.png'
 
-export const Header = () => {
+export const Top = () => {
 
   const containerStyle = {
-    width:"1000px",
-    margin: "0 auto"
+    width:"1200px",
+    margin: "0 auto",
+    display:"flex"
+
   };
   const logoStyle = {
     color:"red",
-    display:"flex"
+    display:"flex",
+    width: "30%",
   };
+  const contentStyle = {
+    width: "70%",
+  }
+
 
   return(
     <div style={containerStyle}>
       <div style={logoStyle}>
         <img src={sample1} alt="sample1"/>
+        <p>sugimura natsumi</p>
+      </div>
+      <div style={contentStyle}>
         <p>sugimura natsumi</p>
       </div>
 
