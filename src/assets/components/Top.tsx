@@ -1,24 +1,10 @@
+import styled from 'styled-components';
 
 export const Top = () => {
 
-  const containerStyle = {
-    width:"1200px",
-    margin: "0 auto",
-    display:"flex",
-
-  };
-  const logoStyle = {
-    color:"red",
-    width: "30%",
-  };
-  const contentStyle = {
-    width: "70%",
-  }
-
-
   return(
-    <div style={containerStyle}>
-      <div style={logoStyle}>
+    <ContainerStyle>
+      <div className="logoStyle">
         <p>Natsumi Sugimura</p>
         <ul >
           <li>Work</li>
@@ -26,10 +12,26 @@ export const Top = () => {
           <li>Profile</li>
         </ul>
       </div>
-      <div style={contentStyle}>
+      <div className="contentStyle">
         <p>sugimura natsumi</p>
       </div>
 
-    </div>
+    </ContainerStyle>
   );
 }
+
+const ContainerStyle = styled.div`
+  width:1200px;
+  margin: 0 auto;
+  display:flex;
+  .logoStyle{
+    color:red;
+    width: 30%;
+    li{
+      list-style: none;
+    }
+  }
+  .contentStyle{
+    width: 70%;
+  }
+`;
