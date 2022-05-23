@@ -10,6 +10,8 @@ export const Top = () => {
           <li><a href="https://www.google.com">Work</a></li>
           <li><a href="https://www.google.com">Skill</a></li>
           <li><a href="https://www.google.com">Profile</a></li>
+          <li></li>
+
         </ul>
       </div>
       <div className="contentStyle">
