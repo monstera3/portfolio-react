@@ -5,7 +5,7 @@ export const Work = () => {
   return(
     <>
       <LeftBar />
-      <div >
+      <div className="contentStyle">
         work
       </div>
     </>

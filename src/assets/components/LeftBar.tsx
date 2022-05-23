@@ -9,10 +9,6 @@ type PageType = {
 }
 const pages: PageType[] = [
   {
-    title: 'Natsumi Sugimura',
-    path: '/',
-  },
-  {
     title: 'Work',
     path: '/work',
   },
@@ -30,6 +26,7 @@ const pages: PageType[] = [
 export const LeftBar = () => {
   return(
     <LeftBarStyle>
+      <h2 className="title"><a href="/">Sugimura Natsumi</a></h2>
       <ul>
         {pages.map((page) => (
           <li>
@@ -50,6 +47,9 @@ const LeftBarStyle = styled.div`
     padding: 6rem 0;
     text-align: center;
     background-color: #69B0AC;
+  .title{
+    margin-bottom: 2rem;
+  }
     li{
       list-style: none;
       padding: 3rem 0;

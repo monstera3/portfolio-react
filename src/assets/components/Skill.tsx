@@ -5,7 +5,7 @@ export const Skill = () => {
   return(
     <>
       <LeftBar />
-      <div >
+      <div className="contentStyle">
         Skill
       </div>
     </>
