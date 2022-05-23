@@ -3,22 +3,45 @@ import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
 
 
-
+type PageType = {
+  title: string,
+  path: string,
+}
+const pages: PageType[] = [
+  {
+    title: 'Natsumi Sugimura',
+    path: '/',
+  },
+  {
+    title: 'Work',
+    path: '/work',
+  },
+  {
+    title:'Skill',
+    path:'/skill'
+  },
+  {
+    title: 'Profile',
+    path: '/profile',
+  }
+];
 
 
 export const LeftBar = () => {
   return(
     <LeftBarStyle>
-        <ul>
-          <li><h2>Natsumi Sugimura</h2></li>
-          <li><a href="https://www.google.com">Work</a></li>
-          <li><a href="https://www.google.com">Skill</a></li>
-          <li><a href="https://www.google.com">Profile</a></li>
-          <li><a href="https://github.com/monstera3"><FaGithub className="icon" size="2rem"/><SiZenn size="2rem" /></a></li>
-
-        </ul>
+      <ul>
+        {pages.map((page) => (
+          <li>
+            <a href={page.path}>{page.title}</a>
+          </li>
+        ))}
+          <li>
+            <a href="https://github.com/monstera3"><FaGithub className="icon" size="2rem"/></a>
+            <a href="https://zenn.dev/monstera"><SiZenn size="2rem" /></a>
+          </li>
+      </ul>
     </LeftBarStyle>
-
   );
 }
 
