@@ -3,6 +3,8 @@ import './App.css';
 import { Top } from './assets/components/Top';
 import { Work } from './assets/components/Work';
 import { Routes,Route } from "react-router-dom"
+import { Skill } from './assets/components/Skill';
+import { Profile } from './assets/components/Profile';
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Top />}/>
         <Route path="work" element={<Work />}/>
+        <Route path="skill" element={<Skill />}/>
+        <Route path="profile" element={<Profile />}/>
       </Routes>
     </div>
   );
