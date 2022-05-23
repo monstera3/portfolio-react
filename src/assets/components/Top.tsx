@@ -12,7 +12,7 @@ export const Top = () => {
           <li><a href="https://www.google.com">Work</a></li>
           <li><a href="https://www.google.com">Skill</a></li>
           <li><a href="https://www.google.com">Profile</a></li>
-          <li><a href="https://github.com/monstera3"><FaGithub size="2rem" /><SiZenn size="2rem" /></a></li>
+          <li><a href="https://github.com/monstera3"><FaGithub className="icon" size="2rem"/><SiZenn size="2rem" /></a></li>
 
         </ul>
       </div>
@@ -29,11 +29,16 @@ const ContainerStyle = styled.div`
   margin: 0 auto;
   display:flex;
   .logoStyle{
+    padding: 6rem 0;
     width: 30%;
     text-align: center;
     background-color: #69B0AC;
     li{
       list-style: none;
+      padding: 3rem 0;
+      .icon{
+        margin-right: 1rem;
+      }
     }
     
   }
