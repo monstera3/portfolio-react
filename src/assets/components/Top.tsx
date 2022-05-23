@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaGithub } from 'react-icons/fa';
 
 export const Top = () => {
 
@@ -10,7 +11,7 @@ export const Top = () => {
           <li><a href="https://www.google.com">Work</a></li>
           <li><a href="https://www.google.com">Skill</a></li>
           <li><a href="https://www.google.com">Profile</a></li>
-          <li></li>
+          <li><a href="https://github.com/monstera3"><FaGithub size={30} /></a></li>
 
         </ul>
       </div>
@@ -27,13 +28,13 @@ const ContainerStyle = styled.div`
   margin: 0 auto;
   display:flex;
   .logoStyle{
-    color:red;
     width: 30%;
     text-align: center;
 
     li{
       list-style: none;
     }
+    
   }
   .contentStyle{
     width: 70%;
