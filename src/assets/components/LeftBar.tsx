@@ -2,6 +2,10 @@ import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
 
+
+
+
+
 export const LeftBar = () => {
   return(
     <LeftBarStyle>
