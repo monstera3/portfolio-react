@@ -1,6 +1,8 @@
 import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
+import { slide as Menu } from 'react-burger-menu'
+
 
 
 type PageType = {
@@ -26,6 +28,12 @@ const pages: PageType[] = [
 export const LeftBar = () => {
   return(
     <LeftBarStyle>
+
+      <Menu right>
+        <a href="/">Sugimura Natsumi</a>
+      </Menu>
+
+
       <h2 className="title"><a href="/">Sugimura Natsumi</a></h2>
       <ul>
         {pages.map((page) => (
