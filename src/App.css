@@ -6,5 +6,11 @@
   "Hiragino Sans",
   Meiryo,
   sans-serif;
- 
+  color: #222222;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #222222;
+  
 }

@@ -5,11 +5,11 @@ export const Top = () => {
   return(
     <ContainerStyle>
       <div className="logoStyle">
-        <p>Natsumi Sugimura</p>
-        <ul >
-          <li>Work</li>
-          <li>Skill</li>
-          <li>Profile</li>
+        <h2>Natsumi Sugimura</h2>
+        <ul>
+          <li><a href="https://www.google.com">Work</a></li>
+          <li><a href="https://www.google.com">Skill</a></li>
+          <li><a href="https://www.google.com">Profile</a></li>
         </ul>
       </div>
       <div className="contentStyle">
@@ -27,6 +27,8 @@ const ContainerStyle = styled.div`
   .logoStyle{
     color:red;
     width: 30%;
+    text-align: center;
+
     li{
       list-style: none;
     }
