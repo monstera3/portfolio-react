@@ -46,7 +46,6 @@ export const LeftBar = () => {
 }
 
 const LeftBarStyle = styled.div`
-
   width: 30%;
     padding: 6rem 0;
     text-align: center;

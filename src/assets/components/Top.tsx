@@ -15,8 +15,6 @@ export const Top = () => {
 }
 
 const ContainerStyle = styled.div`
-  width:1200px;
-  margin: 0 auto;
   display:flex;
   .contentStyle{
     width: 70%;
