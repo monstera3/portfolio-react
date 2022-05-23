@@ -9,7 +9,6 @@ export const Top = () => {
       <div className="contentStyle">
         <p>sugimura natsumi</p>
       </div>
-
     </ContainerStyle>
   );
 }

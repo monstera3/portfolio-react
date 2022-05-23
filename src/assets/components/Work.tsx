@@ -4,11 +4,10 @@ export const Work = () => {
 
   return(
     <>
+      <LeftBar />
       <div >
-        <LeftBar />
         work
       </div>
-
     </>
   );
 }
