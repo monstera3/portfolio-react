@@ -9,8 +9,8 @@ import styled from 'styled-components';
 export const LeftBar = () => {
   return(
     <LeftBarStyle>
-        <h2>Natsumi Sugimura</h2>
         <ul>
+          <li><h2>Natsumi Sugimura</h2></li>
           <li><a href="https://www.google.com">Work</a></li>
           <li><a href="https://www.google.com">Skill</a></li>
           <li><a href="https://www.google.com">Profile</a></li>
