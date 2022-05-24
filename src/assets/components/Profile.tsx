@@ -32,10 +32,9 @@ const ContainerStyle = styled.div`
    display: flex;
    img{
      width: 20rem;
-     border-radius: 10%;
+     border-radius: 1%;
    }
    .boxText{
-     background-color: lightsteelblue;
      margin-left: 10%;
      p{
        margin: 3vh 0;
