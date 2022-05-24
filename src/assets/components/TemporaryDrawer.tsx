@@ -6,10 +6,9 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import { FaGithub } from 'react-icons/fa';
+import { SiZenn } from 'react-icons/si';
 
 type Anchor = 'right';
 
@@ -42,30 +41,22 @@ export  const TemporaryDrawer = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        <h2>Sugimura Natsumi</h2>
+        {['Work', 'Skill', 'Profile'].map((text ) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <ul>
+        <li>
+          <a href="https://github.com/monstera3"><FaGithub className="icon" size="1.5rem"/></a>
+          <a href="https://zenn.dev/monstera"><SiZenn size="1.5rem" /></a>
+        </li>
+      </ul>
     </Box>
   );
 
