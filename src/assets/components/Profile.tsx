@@ -1,5 +1,6 @@
 import { LeftBar } from './LeftBar';
 import styled from 'styled-components';
+import sample3Img from '../images/sample3.jpg'
 
 export const Profile = () => {
 
@@ -9,7 +10,17 @@ export const Profile = () => {
       <LeftBar />
       <div className="contentStyle">
         <h1 className="headTitle">Profile</h1>
-        Profile
+        <div className="profileBox">
+          <img src={sample3Img} alt=""/>
+          <div className="boxText">
+            <p>杉村菜都美</p>
+            <p>大学卒業後、営業、CADオペレーターを経て <br/>
+              2022年2月よりwebデザイン、プログラミングを学び始めました。 <br/>
+              現在はフロントエンドを中心に勉強しています。</p>
+          </div>
+        </div>
+        <h2 className="headLine ">経歴</h2>
+
       </div>
       </ContainerStyle>
     </>
@@ -17,5 +28,18 @@ export const Profile = () => {
 }
 const ContainerStyle = styled.div`
   display:flex;
- 
+ .profileBox{
+   display: flex;
+   img{
+     width: 20rem;
+     border-radius: 10%;
+   }
+   .boxText{
+     background-color: lightsteelblue;
+     margin-left: 10%;
+     p{
+       margin: 3vh 0;
+     }
+   }
+ }
 `;
