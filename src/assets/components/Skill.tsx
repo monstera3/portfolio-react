@@ -8,6 +8,7 @@ export const Skill = () => {
       <ContainerStyle>
         <LeftBar />
         <div className="contentStyle">
+          <h1 className="headTitle">Skill</h1>
           Skill
         </div>
       </ContainerStyle>

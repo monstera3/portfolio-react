@@ -1,6 +1,6 @@
 .App {
   background-color: #FCFAF2;
-  font-family:"Helvetica Neue",
+  font-family: "Helvetica Neue",
   Arial,
   "Hiragino Kaku Gothic ProN",
   "Hiragino Sans",
@@ -18,4 +18,15 @@ a {
 .contentStyle{
   width: 70%;
   background-color: #F0EFE0;
+}
+.headTitle {
+  font-family: "times",Meiryo,sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
