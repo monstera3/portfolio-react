@@ -15,7 +15,7 @@ export const Work = () => {
           <div className="workBox">
             <img src={sample2Img} alt=""/>
             <div className="boxText">
-              <p>サービス紹介</p>
+              <p>美術館・展示会の口コミサービス</p>
              <h3>Ato</h3>
               <p>説明文</p>
             </div>
@@ -39,6 +39,10 @@ const ContainerStyle = styled.div`
     }
     .boxText{
       background-color: lightsteelblue;
+      margin-left: 10%;
+      p{
+        margin: 3vh 0;
+      }
     }
   }
 `;
