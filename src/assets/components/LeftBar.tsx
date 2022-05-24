@@ -1,6 +1,7 @@
 import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
+import { Box } from '@mui/material';
 
 
 
@@ -26,8 +27,9 @@ const pages: PageType[] = [
 
 export const LeftBar = () => {
   return(
-    <LeftBarStyle>
+    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
 
+    <LeftBarStyle>
 
       <h2 className="title"><a href="/">Sugimura Natsumi</a></h2>
       <ul>
@@ -42,11 +44,13 @@ export const LeftBar = () => {
           </li>
       </ul>
     </LeftBarStyle>
+    </Box>
+
   );
 }
 
 const LeftBarStyle = styled.div`
-  width: 30%;
+  width: 100%;
     padding: 6rem 0;
     text-align: center;
     background-color: #69B0AC;
