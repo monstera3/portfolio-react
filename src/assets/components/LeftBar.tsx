@@ -59,6 +59,18 @@ const LeftBarStyle = styled.div`
     li{
       list-style: none;
       padding: 3rem 0;
+      a{
+        font-size: 20px;
+        color: #999;
+        display: inline-block;
+        transition: .3s;
+        transform: scale(1);
+        :hover{
+          color: #333;
+          transition: color .3s;
+          transform: scale(0.95);
+        }
+      }
       .icon{
         margin-right: 1rem;
       }
