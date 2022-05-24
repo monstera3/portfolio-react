@@ -5,13 +5,16 @@ import { TemporaryDrawer } from './TemporaryDrawer';
 export const Top = () => {
 
   return(
-    <ContainerStyle>
-      <LeftBar />
+    <>
       <TemporaryDrawer />
-      <div className="contentStyle">
-        <p>sugimura natsumi</p>
-      </div>
-    </ContainerStyle>
+      <ContainerStyle>
+        <LeftBar />
+        <div className="contentStyle">
+          <p>sugimura natsumi</p>
+        </div>
+      </ContainerStyle>
+    </>
+
   );
 }
 
