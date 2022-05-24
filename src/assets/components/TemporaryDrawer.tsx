@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
@@ -76,7 +75,6 @@ export  const TemporaryDrawer = () => {
             <MenuIcon />
           </IconButton>
           </Box>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
