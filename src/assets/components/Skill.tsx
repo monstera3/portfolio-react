@@ -1,13 +1,24 @@
 import { LeftBar } from './LeftBar';
+import styled from 'styled-components';
 
 export const Skill = () => {
 
   return(
     <>
-      <LeftBar />
-      <div className="contentStyle">
-        Skill
-      </div>
+      <ContainerStyle>
+        <LeftBar />
+        <div className="contentStyle">
+          Skill
+        </div>
+      </ContainerStyle>
+
     </>
   );
 }
+const ContainerStyle = styled.div`
+  display:flex;
+  .contentStyle{
+    width: 70%;
+    background-color: #F0EFE0;
+  }
+`;
