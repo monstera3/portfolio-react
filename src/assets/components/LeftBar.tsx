@@ -31,7 +31,7 @@ export const LeftBar = () => {
 
     <LeftBarStyle>
 
-      <h2 className="title"><a href="/">Sugimura Natsumi</a></h2>
+      <h1 className="titleName"><a href="/">Sugimura Natsumi</a></h1>
       <ul>
         {pages.map((page) => (
           <li>
@@ -54,8 +54,9 @@ const LeftBarStyle = styled.div`
     padding: 6rem 0;
     text-align: center;
     background-color: #69B0AC;
-  .title{
+  .titleName{
     margin-bottom: 2rem;
+    font-family: "times",Meiryo,sans-serif;
   }
     li{
       list-style: none;
