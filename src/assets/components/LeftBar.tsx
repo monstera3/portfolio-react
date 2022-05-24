@@ -28,9 +28,7 @@ const pages: PageType[] = [
 export const LeftBar = () => {
   return(
     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
-
     <LeftBarStyle>
-
       <h1 className="titleName"><a href="/">Sugimura Natsumi</a></h1>
       <ul>
         {pages.map((page) => (
@@ -45,7 +43,6 @@ export const LeftBar = () => {
       </ul>
     </LeftBarStyle>
     </Box>
-
   );
 }
 
@@ -57,6 +54,7 @@ const LeftBarStyle = styled.div`
   .titleName{
     margin-bottom: 2rem;
     font-family: "times",Meiryo,sans-serif;
+    font-weight: normal;
   }
     li{
       list-style: none;
