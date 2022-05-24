@@ -18,8 +18,4 @@ export const Top = () => {
 
 const ContainerStyle = styled.div`
   display:flex;
-  .contentStyle{
-    width: 70%;
-    background-color: #F0EFE0;
-  }
 `;

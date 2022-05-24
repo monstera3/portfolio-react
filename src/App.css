@@ -14,3 +14,8 @@ a {
   color: #222222;
   
 }
+/*Top,Work,Skill,Profileで共通*/
+.contentStyle{
+  width: 70%;
+  background-color: #F0EFE0;
+}
