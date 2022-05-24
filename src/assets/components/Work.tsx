@@ -1,6 +1,6 @@
 import { LeftBar } from './LeftBar';
 import styled from 'styled-components';
-
+import sample2Img from '../images/sample2.png';
 
 
 
@@ -12,7 +12,14 @@ export const Work = () => {
         <LeftBar />
         <div className="contentStyle">
           <h1 className="headTitle">Work</h1>
-          work
+          <div className="workBox">
+            <img src={sample2Img} alt=""/>
+            <div className="boxText">
+              <p>サービス紹介</p>
+             <h3>Ato</h3>
+              <p>説明文</p>
+            </div>
+          </div>
 
         </div>
       </ContainerStyle>
@@ -23,8 +30,16 @@ export const Work = () => {
 
 const ContainerStyle = styled.div`
   display:flex;
-  .aa{
-    background-color: salmon;
+  .workBox{
+    display: flex;
+    background-color: white;
+    img{
+      width: 20rem;
+      border-radius: 10%;
+    }
+    .boxText{
+      background-color: lightsteelblue;
+    }
   }
 `;
 
