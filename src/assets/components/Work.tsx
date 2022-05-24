@@ -8,6 +8,7 @@ export const Work = () => {
       <ContainerStyle>
         <LeftBar />
         <div className="contentStyle">
+          <h1 className="headTitle">Work</h1>
           work
         </div>
       </ContainerStyle>

@@ -8,6 +8,7 @@ export const Profile = () => {
       <ContainerStyle>
       <LeftBar />
       <div className="contentStyle">
+        <h1 className="headTitle">Profile</h1>
         Profile
       </div>
       </ContainerStyle>
