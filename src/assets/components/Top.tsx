@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import { LeftBar } from './LeftBar';
-import { TemporaryDrawer } from './TemporaryDrawer';
 
 export const Top = () => {
 
   return(
     <>
-      <TemporaryDrawer />
       <ContainerStyle>
         <LeftBar />
         <div className="contentStyle">

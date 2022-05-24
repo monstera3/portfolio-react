@@ -6,11 +6,13 @@ import { Routes,Route } from "react-router-dom"
 import { Skill } from './assets/components/Skill';
 import { Profile } from './assets/components/Profile';
 import styled from 'styled-components';
+import { TemporaryDrawer } from './assets/components/TemporaryDrawer';
 
 
 function App() {
   return (
     <div className="App">
+      <TemporaryDrawer />
       <AppStyle>
         <Routes>
           <Route path="/" element={<Top />}/>
