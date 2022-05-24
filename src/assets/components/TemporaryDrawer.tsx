@@ -9,6 +9,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
+import { IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 type Anchor = 'right';
 
@@ -61,6 +64,18 @@ export  const TemporaryDrawer = () => {
     <div>
       {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <IconButton
+            onClick={toggleDrawer(anchor, true)}
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <MenuIcon />
+          </IconButton>
+          </Box>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
             anchor={anchor}
