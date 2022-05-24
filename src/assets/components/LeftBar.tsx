@@ -11,15 +11,15 @@ type PageType = {
 }
 const pages: PageType[] = [
   {
-    title: 'Work',
+    title: 'WORK',
     path: '/work',
   },
   {
-    title:'Skill',
+    title:'SKILL',
     path:'/skill'
   },
   {
-    title: 'Profile',
+    title: 'PROFILE',
     path: '/profile',
   }
 ];
@@ -50,17 +50,18 @@ const LeftBarStyle = styled.div`
   width: 100%;
     padding: 6rem 0;
     text-align: center;
-    background-color: #69B0AC;
   .titleName{
     margin-bottom: 2rem;
     font-family: "times",Meiryo,sans-serif;
     font-weight: normal;
   }
+  ul{
     li{
       list-style: none;
       padding: 3rem 0;
       .icon{
         margin-right: 1rem;
       }
+   }
   }
 `;
