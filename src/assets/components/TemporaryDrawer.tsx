@@ -14,9 +14,6 @@ type Anchor = 'right';
 
 export  const TemporaryDrawer = () => {
   const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
     right: false,
   });
 
