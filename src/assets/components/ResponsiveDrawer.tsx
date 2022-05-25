@@ -1,10 +1,12 @@
 import React from 'react';
 import Drawer from '@mui/material/Drawer';
-import { IconButton } from '@mui/material';
+import {  Box, IconButton, Toolbar } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
+
+const drawerWidth = 240;
 
 
 type PageType = {
@@ -69,27 +71,31 @@ export  const ResponsiveDrawer = () => {
 
   return (
     <div>
+      <Box sx={{display: 'block'}}>
         <React.Fragment key={'right'}>
-
-          <IconButton
-            onClick={toggleDrawer('right', true)}
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            color="inherit"
-            // どの幅からハンバーガーメニューを出すか sm or md
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
+            <Toolbar>
+              <IconButton
+                onClick={toggleDrawer('right', true)}
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit"
+                edge="start"
+                // どの幅からハンバーガーメニューを出すか sm or md
+                sx={{ mr: 2, display: { sm: 'none' } }}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Toolbar>
           {/*ハンバーガーメニューの時*/}
           <Drawer
             anchor={'right'}
             open={state['right']}
             variant="temporary"
             onClose={toggleDrawer('right', false)}
-            sx={{display: { xs: 'block', sm:'none'}}}
+            sx={{display: { xs: 'block', sm:'none'},
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },}}
           >
             {drawer()}
           </Drawer>
@@ -97,19 +103,21 @@ export  const ResponsiveDrawer = () => {
           <Drawer
             variant="permanent"
             sx={{
-              display: { xs: 'none', sm: 'block' }
+              display: { xs: 'none', sm: 'block' },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
             }}
             open
           >
             {drawer()}
           </Drawer>
         </React.Fragment>
+      </Box>
+
     </div>
   );
 }
 
 const LeftBarStyle = styled.div`
-  width: 100%;
     padding: 6rem 0;
     text-align: center;
   .titleName{
