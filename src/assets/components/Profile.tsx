@@ -25,7 +25,6 @@ export const Profile = () => {
   );
 }
 const ContainerStyle = styled.div`
-  display:flex;
   
  .profileBox{
    display: flex;

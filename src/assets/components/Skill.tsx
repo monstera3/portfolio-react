@@ -66,6 +66,5 @@ export const Skill = () => {
   );
 }
 const ContainerStyle = styled.div`
-  display:flex;
  
 `;

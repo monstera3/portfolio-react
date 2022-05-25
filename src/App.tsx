@@ -12,8 +12,8 @@ import { ResponsiveDrawer } from './assets/components/ResponsiveDrawer';
 function App() {
   return (
     <div className="App">
-      <ResponsiveDrawer />
       <AppStyle>
+        <ResponsiveDrawer />
         <Routes>
           <Route path="/" element={<Top />}/>
           <Route path="work" element={<Work />}/>

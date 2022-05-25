@@ -27,7 +27,6 @@ export const Work = () => {
 }
 
 const ContainerStyle = styled.div`
-  display:flex;
   .workBox{
     display: flex;
     background-color: white;

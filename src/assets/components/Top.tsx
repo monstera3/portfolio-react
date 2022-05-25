@@ -15,5 +15,4 @@ export const Top = () => {
 }
 
 const ContainerStyle = styled.div`
-  display:flex;
 `;
