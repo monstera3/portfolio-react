@@ -1,16 +1,8 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import { FaGithub } from 'react-icons/fa';
-import { SiZenn } from 'react-icons/si';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { pages } from './LeftBar';
+
 
 
 type Anchor = 'right';
@@ -34,36 +26,16 @@ export  const ResponsiveDrawer = () => {
         setState({ ...state, [anchor]: open });
       };
 
-  const list = (anchor: Anchor) => (
-    <Box
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        <h2>Sugimura Natsumi</h2>
-        {pages.map((page ) => (
-          <ListItem key={page.title} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={page.title} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <ul>
-        <li>
-          <a href="https://github.com/monstera3"><FaGithub className="icon" size="1.5rem"/></a>
-          <a href="https://zenn.dev/monstera"><SiZenn size="1.5rem" /></a>
-        </li>
-      </ul>
-    </Box>
+  const drawer =()=> (
+    <div>
+      sample
+    </div>
   );
 
   return (
     <div>
         <React.Fragment key={'right'}>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+
           <IconButton
             onClick={toggleDrawer('right', true)}
             size="large"
@@ -71,16 +43,30 @@ export  const ResponsiveDrawer = () => {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             color="inherit"
+            // どの幅からハンバーガーメニューを出すか sm or md
+            sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
-          </Box>
+          {/*ハンバーガーメニューの時*/}
           <Drawer
             anchor={'right'}
             open={state['right']}
+            variant="temporary"
             onClose={toggleDrawer('right', false)}
+            sx={{display: { xs: 'block', sm:'none'}}}
           >
-            {list('right')}
+            {drawer()}
+          </Drawer>
+          {/*sm以上のサイズで表示*/}
+          <Drawer
+            variant="permanent"
+            sx={{
+              display: { xs: 'none', sm: 'block' }
+            }}
+            open
+          >
+            {drawer()}
           </Drawer>
         </React.Fragment>
     </div>
