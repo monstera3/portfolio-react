@@ -61,11 +61,10 @@ export  const TemporaryDrawer = () => {
 
   return (
     <div>
-      {(['right'] as const).map((anchor) => (
-        <React.Fragment key={anchor}>
+        <React.Fragment key={'right'}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
           <IconButton
-            onClick={toggleDrawer(anchor, true)}
+            onClick={toggleDrawer('right', true)}
             size="large"
             aria-label="account of current user"
             aria-controls="menu-appbar"
@@ -76,14 +75,13 @@ export  const TemporaryDrawer = () => {
           </IconButton>
           </Box>
           <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
+            anchor={'right'}
+            open={state['right']}
+            onClose={toggleDrawer('right', false)}
           >
-            {list(anchor)}
+            {list('right')}
           </Drawer>
         </React.Fragment>
-      ))}
     </div>
   );
 }
