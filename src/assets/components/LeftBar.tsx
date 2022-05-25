@@ -9,7 +9,7 @@ type PageType = {
   title: string,
   path: string,
 }
-const pages: PageType[] = [
+export const pages: PageType[] = [
   {
     title: 'WORK',
     path: '/work',

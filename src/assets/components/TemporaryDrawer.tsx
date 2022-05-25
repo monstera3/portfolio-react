@@ -10,6 +10,7 @@ import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { pages } from './LeftBar';
 
 
 type Anchor = 'right';
@@ -41,10 +42,10 @@ export  const TemporaryDrawer = () => {
     >
       <List>
         <h2>Sugimura Natsumi</h2>
-        {['Work', 'Skill', 'Profile'].map((text ) => (
-          <ListItem key={text} disablePadding>
+        {pages.map((page ) => (
+          <ListItem key={page.title} disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} />
+              <ListItemText primary={page.title} />
             </ListItemButton>
           </ListItem>
         ))}
