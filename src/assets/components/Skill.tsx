@@ -4,22 +4,23 @@ import { Grid } from '@mui/material';
 import { SkillCard } from './SkillCard';
 import React from 'react';
 import sampleImg from '../images/sample1.png';
+import javascriptImg  from '../images/javascript.svg';
 
 
 
 
 
-type SkillType = {
+export type SkillType = {
   image: any,
   title: string,
 }
 const skills: SkillType[] = [
   {
-    image: {sampleImg},
+    image: sampleImg,
     title: 'title1',
   },
   {
-    image:'javascriptImg',
+    image:javascriptImg,
     title:'title2',
   }
 ];
@@ -45,19 +46,11 @@ export const Skill = () => {
             <Grid container spacing={2} maxWidth="md" m="auto">
             {skills.map((skill) =>(
               <Grid item xs={2} sm={2} md={2} lg={2}>
-                <SkillCard />
+                <SkillCard skill={skill}/>
               </Grid>
             ))}
             </Grid>
-
-
-            <Grid container spacing={2} maxWidth="md" m="auto">
-              <Grid item xs={2} sm={2} md={2} lg={2}>
-                <SkillCard />
-              </Grid>
-            </Grid>
           </div>
-
         </div>
       </ContainerStyle>
 
