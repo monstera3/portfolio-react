@@ -1,4 +1,3 @@
-import { LeftBar } from './LeftBar';
 import styled from 'styled-components';
 import sample2Img from '../images/sample2.png';
 
@@ -9,7 +8,6 @@ export const Work = () => {
   return(
     <>
       <ContainerStyle>
-        <LeftBar />
         <div className="contentStyle">
           <h1 className="headTitle">Work</h1>
           <div className="workBox">
