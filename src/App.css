@@ -1,4 +1,6 @@
 .App {
+  width:1200px;
+  margin: 0 auto;
   background-color: #FCFAF2;
   font-family: "times","Helvetica Neue",
   Arial,
