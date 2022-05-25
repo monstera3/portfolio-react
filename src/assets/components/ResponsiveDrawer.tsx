@@ -15,7 +15,7 @@ import { pages } from './LeftBar';
 
 type Anchor = 'right';
 
-export  const TemporaryDrawer = () => {
+export  const ResponsiveDrawer = () => {
   const [state, setState] = React.useState({
     right: false,
   });
