@@ -25,6 +25,7 @@ const SkillCardStyle = styled.div`
   }
   img{
     width: 60px;
+    height: 60px;
   }
   p{
     margin-top: 1rem;

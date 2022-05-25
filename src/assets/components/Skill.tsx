@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { Grid } from '@mui/material';
 import { SkillCard } from './SkillCard';
 import React from 'react';
-import sampleImg from '../images/sample1.png';
 import javascriptImg  from '../images/javascript.svg';
-
-
-
-
+import sassImg from '../images/sass.svg'
+import htmlImg from '../images/html5.svg'
+import reactImg from '../images/react.svg'
+import cssImg from '../images/css3.svg'
 
 export type SkillType = {
   image: any,
@@ -16,17 +15,26 @@ export type SkillType = {
 }
 const skills: SkillType[] = [
   {
-    image: sampleImg,
-    title: 'title1',
+    image: reactImg,
+    title: 'React',
   },
   {
     image:javascriptImg,
-    title:'title2',
+    title:'JavaScript',
+  },
+  {
+    image:cssImg,
+    title:'CSS3',
+  },
+  {
+    image:htmlImg,
+    title:'HTML5',
+  },
+  {
+    image:sassImg,
+    title:'Sass',
   }
 ];
-
-
-
 
 export const Skill = () => {
 
@@ -38,11 +46,14 @@ export const Skill = () => {
           <h1 className="headTitle">Skill</h1>
           Skill
           <h2 className="headTitle">フロントエンド</h2>
+          <Grid container spacing={2} maxWidth="md" m="auto">
+            {skills.map((skill) =>(
+              <Grid item xs={2}>
+                <SkillCard skill={skill}/>
+              </Grid>
+            ))}
+          </Grid>
           <h2 className="headTitle">デザイン</h2>
-
-          <div className="aaa">
-
-
             <Grid container spacing={2} maxWidth="md" m="auto">
             {skills.map((skill) =>(
               <Grid item xs={2} sm={2} md={2} lg={2}>
@@ -51,7 +62,6 @@ export const Skill = () => {
             ))}
             </Grid>
           </div>
-        </div>
       </ContainerStyle>
 
     </>
