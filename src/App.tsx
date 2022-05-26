@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
         <ResponsiveDrawer />
-      <Box sx={{marginLeft: { xs: 0, sm: `${drawerWidth}px`}}}>
+      <Box sx={{marginLeft: { sm: 0, md: `${drawerWidth}px`}}}>
         <Routes>
           <Route path="/" element={<Top />}/>
           <Route path="work" element={<Work />}/>
