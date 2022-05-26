@@ -71,7 +71,7 @@ export  const ResponsiveDrawer = () => {
 
   return (
     <div>
-      <Box sx={{display: 'block'}}>
+      <Box sx={{display: 'flex'}}>
         <React.Fragment key={'right'}>
             <Toolbar>
               <IconButton
@@ -100,7 +100,8 @@ export  const ResponsiveDrawer = () => {
             {drawer()}
           </Drawer>
           {/*sm以上のサイズで表示*/}
-          <Drawer
+
+           <Drawer
             variant="permanent"
             sx={{
               display: { xs: 'none', sm: 'block' },
@@ -108,6 +109,7 @@ export  const ResponsiveDrawer = () => {
             }}
             open
           >
+            {/* TODO margin-leftを入れたい*/}
             {drawer()}
           </Drawer>
         </React.Fragment>
