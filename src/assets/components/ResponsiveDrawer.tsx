@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 import { SiZenn } from 'react-icons/si';
 import styled from 'styled-components';
 
-const drawerWidth = 240;
+export const drawerWidth = 240;
 
 
 type PageType = {
