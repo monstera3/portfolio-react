@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { SkillCard } from './SkillCard';
 import React from 'react';
 import javascriptImg  from '../images/javascript.svg';
@@ -38,8 +38,8 @@ const skills: SkillType[] = [
 export const Skill = () => {
 
   return(
-    <>
-      <ContainerStyle>
+    <ContainerStyle>
+      <Box >
         <div className="contentStyle">
           <h1 className="headTitle">Skill</h1>
           Skill
@@ -59,12 +59,13 @@ export const Skill = () => {
               </Grid>
             ))}
             </Grid>
-          </div>
-      </ContainerStyle>
 
-    </>
+          </div>
+      </Box>
+    </ContainerStyle>
   );
 }
 const ContainerStyle = styled.div`
  
 `;
+

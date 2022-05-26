@@ -83,7 +83,7 @@ export  const ResponsiveDrawer = () => {
                 color="inherit"
                 edge="start"
                 // どの幅からハンバーガーメニューを出すか sm or md
-                sx={{ mr: 2, display: { sm: 'none' } }}
+                sx={{ mr: 2, display: { sm:'block', md: 'none' } }}
               >
                 <MenuIcon />
               </IconButton>
@@ -94,7 +94,7 @@ export  const ResponsiveDrawer = () => {
             open={state['right']}
             variant="temporary"
             onClose={toggleDrawer('right', false)}
-            sx={{display: { xs: 'block', sm:'none'},
+            sx={{display: { sm: 'none', md:'block'},
               '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },}}
           >
             {drawer()}
