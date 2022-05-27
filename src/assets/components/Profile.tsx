@@ -14,7 +14,7 @@ export const Profile = () => {
             <p>大学卒業後、営業、CADオペレーターを経て <br/>
               2022年 2月よりWebデザイン、プログラミングを学び始めました。 <br/>
               現在はフロントエンドを中心に勉強しています。</p>
-            <h2 className="headLine ">経歴</h2>
+            <h3 className="headLine ">経歴</h3>
 
           </div>
         </div>

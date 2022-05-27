@@ -39,8 +39,8 @@ li{
 
 /*左に青線が入った見出し*/
 .headLine{
-  padding: 0.25rem 1rem;
-  border-left: 10px solid #4EBCD4;
+  padding: 0.3rem 1rem;
+  border-left: 8px solid #4EBCD4;
   font-weight: normal;
   margin: 5% 0;
 }
