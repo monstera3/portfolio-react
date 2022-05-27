@@ -31,6 +31,25 @@ export const pages: PageType[] = [
 
 type Anchor = 'right';
 
+export const Menu =()=> (
+  <div>
+    <LeftBarStyle>
+      <h1 className="titleName"><a href="/">Sugimura Natsumi</a></h1>
+      <ul>
+        {pages.map((page) => (
+          <li>
+            <a href={page.path}>{page.title}</a>
+          </li>
+        ))}
+        <li>
+          <a href="https://github.com/monstera3"><FaGithub className="icon" size="2rem"/></a>
+          <a href="https://zenn.dev/monstera"><SiZenn size="2rem" /></a>
+        </li>
+      </ul>
+    </LeftBarStyle>
+  </div>
+);
+
 export  const ResponsiveDrawer = () => {
   const [state, setState] = React.useState({
     right: false,
@@ -49,25 +68,6 @@ export  const ResponsiveDrawer = () => {
 
         setState({ ...state, [anchor]: open });
       };
-
-  const drawer =()=> (
-    <div>
-      <LeftBarStyle>
-        <h1 className="titleName"><a href="/">Sugimura Natsumi</a></h1>
-        <ul>
-          {pages.map((page) => (
-            <li>
-              <a href={page.path}>{page.title}</a>
-            </li>
-          ))}
-          <li>
-            <a href="https://github.com/monstera3"><FaGithub className="icon" size="2rem"/></a>
-            <a href="https://zenn.dev/monstera"><SiZenn size="2rem" /></a>
-          </li>
-        </ul>
-      </LeftBarStyle>
-    </div>
-  );
 
   return (
     <div>
@@ -97,20 +97,7 @@ export  const ResponsiveDrawer = () => {
             sx={{display: { xs: 'block', md:'none'},
               '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },}}
           >
-            {drawer()}
-          </Drawer>
-          {/*sm以上のサイズで表示*/}
-
-           <Drawer
-            variant="permanent"
-            sx={{
-              display: { xs: 'none', md: 'block' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-            }}
-            open
-          >
-            {/* TODO margin-leftを入れたい*/}
-            {drawer()}
+            {Menu()}
           </Drawer>
         </React.Fragment>
       </Box>
@@ -120,7 +107,7 @@ export  const ResponsiveDrawer = () => {
 }
 
 const LeftBarStyle = styled.div`
-    padding: 6rem 0;
+    padding: 6rem 2em;
     text-align: center;
   .titleName{
     margin-bottom: 2rem;

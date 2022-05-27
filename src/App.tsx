@@ -5,7 +5,7 @@ import { Work } from './assets/components/Work';
 import { Routes,Route } from "react-router-dom"
 import { Skill } from './assets/components/Skill';
 import { Profile } from './assets/components/Profile';
-import { drawerWidth, ResponsiveDrawer } from './assets/components/ResponsiveDrawer';
+import { Menu, ResponsiveDrawer } from './assets/components/ResponsiveDrawer';
 import { Box } from '@mui/material';
 
 
@@ -13,15 +13,16 @@ import { Box } from '@mui/material';
 function App() {
   return (
     <div className="App">
-        <ResponsiveDrawer />
-      <Box sx={{marginLeft: { sm: 0, md: `${drawerWidth}px`}}}>
+      <ResponsiveDrawer />
+      <div style={{ display: 'flex' }}>
+        <Box sx={{display: { xs: 'none', md:'block'}}}><Menu /></Box>
         <Routes>
           <Route path="/" element={<Top />}/>
           <Route path="work" element={<Work />}/>
           <Route path="skill" element={<Skill />}/>
           <Route path="profile" element={<Profile />}/>
         </Routes>
-      </Box>
+      </div>
     </div>
   );
 }
