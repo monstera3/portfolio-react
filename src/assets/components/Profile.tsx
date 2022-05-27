@@ -14,9 +14,10 @@ export const Profile = () => {
             <p>大学卒業後、営業、CADオペレーターを経て <br/>
               2022年 2月よりWebデザイン、プログラミングを学び始めました。 <br/>
               現在はフロントエンドを中心に勉強しています。</p>
+            <h2 className="headLine ">経歴</h2>
+
           </div>
         </div>
-        <h2 className="headLine ">経歴</h2>
 
       </ContainerStyle>
     </>
@@ -26,12 +27,14 @@ const ContainerStyle = styled.div`
   
  .profileBox{
    display: flex;
+   flex-direction: column;
+   align-items: center;
    img{
      width: 18rem;
      border-radius: 1%;
+     
    }
    .boxText{
-     margin-left: 8%;
      p{
        margin: 3vh 0;
      }
