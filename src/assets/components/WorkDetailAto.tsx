@@ -28,6 +28,20 @@ export const WorkDetailAto = () => {
           <img src={macbookpro16Img} alt=""/>
 
         </Grid>
+
+        <Grid item xs={12} md={12}>
+          <h3 className="headLine ">コンセプト</h3>
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <h3 className="headLine ">ワイヤーフレーム</h3>
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <h3 className="headLine ">カスタマージャーニーマップ</h3>
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <h3 className="headLine ">工夫ポイント</h3>
+        </Grid>
+
       </Grid>
     </ContainerStyle>
   );
