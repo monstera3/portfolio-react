@@ -7,6 +7,7 @@ import { Skill } from './assets/components/Skill';
 import { Profile } from './assets/components/Profile';
 import { Menu, ResponsiveDrawer } from './assets/components/ResponsiveDrawer';
 import { Box } from '@mui/material';
+import { WorkDetailAto } from './assets/components/WorkDetailAto';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Top />}/>
             <Route path="work" element={<Work />}/>
+            <Route path="ato" element={<WorkDetailAto />}/>
             <Route path="skill" element={<Skill />}/>
             <Route path="profile" element={<Profile />}/>
           </Routes>
