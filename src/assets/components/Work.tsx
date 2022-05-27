@@ -26,6 +26,10 @@ export const Work = () => {
 }
 
 const ContainerStyle = styled.div`
+  img{
+    height: 200px;
+    margin-left: 20%;
+  }
   .abc{
     background-color: lightskyblue;
   }
