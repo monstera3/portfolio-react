@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import sample2Img from '../images/sample2.png';
 import React from 'react';
+import Grid from '@mui/material/Grid';
 
 
 
@@ -9,33 +10,28 @@ export const Work = () => {
   return(
       <ContainerStyle>
           <h1 className="headTitle">Work</h1>
-          <div className="workBox">
-            <img src={sample2Img} alt=""/>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={7}>
+            <a href="https://prog-8.com/dashboard"><img src={sample2Img} alt=""/></a>
+          </Grid>
+          <Grid item xs={12} md={5}>
             <div className="boxText">
               <p>美術館・展示会の口コミサービス</p>
-             <h3>Ato</h3>
+              <h3>Ato</h3>
               <p>説明文</p>
             </div>
-          </div>
+          </Grid>
+        </Grid>
       </ContainerStyle>
   );
 }
 
 const ContainerStyle = styled.div`
-  .workBox{
-    display: flex;
+  .abc{
+    background-color: lightskyblue;
+  }
+  .boxText {
     background-color: white;
-    img{
-      width: 20rem;
-      border-radius: 10%;
-    }
-    .boxText{
-      background-color: lightsteelblue;
-      margin-left: 10%;
-      p{
-        margin: 3vh 0;
-      }
-    }
   }
 `;
 
