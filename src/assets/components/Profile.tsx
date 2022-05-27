@@ -6,7 +6,6 @@ export const Profile = () => {
   return(
     <>
       <ContainerStyle>
-      <div className="contentStyle">
         <h1 className="headTitle">Profile</h1>
         <div className="profileBox">
           <img src={sample3Img} alt=""/>
@@ -19,7 +18,6 @@ export const Profile = () => {
         </div>
         <h2 className="headLine ">経歴</h2>
 
-      </div>
       </ContainerStyle>
     </>
   );

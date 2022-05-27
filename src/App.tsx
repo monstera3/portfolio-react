@@ -14,14 +14,16 @@ function App() {
   return (
     <div className="App">
       <ResponsiveDrawer />
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex' }} >
         <Box sx={{display: { xs: 'none', md:'block'}}}><Menu /></Box>
-        <Routes>
-          <Route path="/" element={<Top />}/>
-          <Route path="work" element={<Work />}/>
-          <Route path="skill" element={<Skill />}/>
-          <Route path="profile" element={<Profile />}/>
-        </Routes>
+        <div  className="contentStyle">
+          <Routes>
+            <Route path="/" element={<Top />}/>
+            <Route path="work" element={<Work />}/>
+            <Route path="skill" element={<Skill />}/>
+            <Route path="profile" element={<Profile />}/>
+          </Routes>
+        </div>
       </div>
     </div>
   );

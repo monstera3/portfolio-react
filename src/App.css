@@ -18,7 +18,7 @@ a {
 }
 /*Top,Work,Skill,Profileで共通*/
 .contentStyle{
-  /*width: 75%;*/
+  width: 100%;
   background-color: #F0EFE0;
 }
 .headTitle {

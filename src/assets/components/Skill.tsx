@@ -40,7 +40,7 @@ export const Skill = () => {
   return(
     <ContainerStyle>
       <Box >
-        <div className="contentStyle">
+
           <h1 className="headTitle">Skill</h1>
           Skill
           <h2 className="headTitle">フロントエンド</h2>
@@ -60,7 +60,6 @@ export const Skill = () => {
             ))}
             </Grid>
 
-          </div>
       </Box>
     </ContainerStyle>
   );

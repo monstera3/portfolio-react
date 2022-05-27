@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import sample2Img from '../images/sample2.png';
+import React from 'react';
 
 
 
 export const Work = () => {
 
   return(
-    <>
       <ContainerStyle>
-        <div className="contentStyle">
           <h1 className="headTitle">Work</h1>
           <div className="workBox">
             <img src={sample2Img} alt=""/>
@@ -18,11 +17,7 @@ export const Work = () => {
               <p>説明文</p>
             </div>
           </div>
-
-        </div>
       </ContainerStyle>
-
-    </>
   );
 }
 

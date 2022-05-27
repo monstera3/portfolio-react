@@ -32,7 +32,6 @@ export const pages: PageType[] = [
 type Anchor = 'right';
 
 export const Menu =()=> (
-  <div>
     <LeftBarStyle>
       <h1 className="titleName"><a href="/">Sugimura Natsumi</a></h1>
       <ul>
@@ -47,7 +46,6 @@ export const Menu =()=> (
         </li>
       </ul>
     </LeftBarStyle>
-  </div>
 );
 
 export  const ResponsiveDrawer = () => {
@@ -107,7 +105,7 @@ export  const ResponsiveDrawer = () => {
 }
 
 const LeftBarStyle = styled.div`
-    padding: 6rem 2em;
+    padding: 8vh 2vw ;
     text-align: center;
   .titleName{
     margin-bottom: 2rem;
