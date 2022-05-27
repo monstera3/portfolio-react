@@ -50,7 +50,6 @@ export const WorkDetailAto = () => {
 const ContainerStyle = styled.div`
   .boxText{
     padding: 5%;
-    background-color: white;
     .workName{
       a{
         color: #4EBCD4;
