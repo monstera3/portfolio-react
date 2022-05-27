@@ -13,9 +13,9 @@ import { WorkDetailAto } from './assets/components/WorkDetailAto';
 
 function App() {
   return (
-    <div className="App">
+    <div className="AppAll">
       <ResponsiveDrawer />
-      <div style={{ display: 'flex' }} >
+      <div style={{ display: 'flex' }} className="App">
         <Box sx={{display: { xs: 'none', md:'block'}}}><Menu /></Box>
         <div  className="contentStyle">
           <Routes>
