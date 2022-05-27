@@ -42,11 +42,10 @@ export const Skill = () => {
       <Box >
 
           <h1 className="headTitle">Skill</h1>
-          Skill
           <h2 className="headTitle">フロントエンド</h2>
           <Grid container spacing={2} maxWidth="md" m="auto">
             {skills.map((skill) =>(
-              <Grid item xs={2}>
+              <Grid item xs={3} sm={2} md={2} lg={2}>
                 <SkillCard skill={skill}/>
               </Grid>
             ))}
@@ -54,7 +53,7 @@ export const Skill = () => {
           <h2 className="headTitle">デザイン</h2>
             <Grid container spacing={2} maxWidth="md" m="auto">
             {skills.map((skill) =>(
-              <Grid item xs={2} sm={2} md={2} lg={2}>
+              <Grid item xs={3} sm={2} md={2} lg={2}>
                 <SkillCard skill={skill}/>
               </Grid>
             ))}
